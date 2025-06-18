@@ -1,7 +1,119 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>Portfolio Initial Commit</h1>
-        <p>Getting the website setup with this first index.html</p>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
+  <style>
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #2C3D55;
+      color: white;
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 100px 20px;
+      min-height: 80vh;
+      color: white;
+    }
+    /* #aboutme { background: #494963; }
+    #projects { background: #2f2f3f; }
+    #education { background: #494963; }
+    #contact { background: #2f2f3f; } */
+  </style>
+</head>
+<body>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  <section id="splash" class="splash">
+    <div class="content">
+        <div class="upSlide">
+            <h1>Hi, I'm Dallan!</h1>
+            <p><span id="splashTextRotate">Software Developer</span></p>
+            <img src="images/lualogo.png" alt="Lua" class="logoSlide"/>
+            <img src="images/cpplogo.png" alt="Cpp" class="logoSlide"/>
+            <img src="images/pythonlogo.png" alt="Python" class="logoSlide"/>
+            <img src="images/sqllogo.png" alt="SQL" class="logoSlide"/>
+            <img src="images/jslogo.png" alt="JavaScript" class="logoSlide"/>
+        </div>
+        <div class = "profileSlide">
+          <img src="images/headshot.png" alt="Headshot" width="300"/>
+        </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="About Me">
+        <h1>About Me</h1>
+        <p>Blurp about myself</p>
+        <a href="content/resume.pdf" download class="resumeButton">Resume</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="upSlide">
+        <h1>Skills</h1>
+        <p>Skills go here</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="upSlide">
+        <h1>Projects</h1>
+        <p>The following are links to my past projects.</p>
+    </div>
+  </section>
+
+  <section id="education">
+      <div class="upSlide">
+          <h1>Education and Certifications</h1>
+      </div>
+    <div class="content">
+        <div>
+            <img src="images/universitylogo.png" alt="UniversityLogo" width="200" class="upSlide"/>
+        </div>
+        <div class="upSlide">
+          <h3>University of Lethbridge</h3>
+          <h4>Bachelors in Computer Sciences (September 2017 - April 2023)</h4>
+          <p>Competed in the ICPC West Division</p>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+          <img src="images/udemylogo.png" alt="UDemyLogo" width="200" class="upSlide"/>
+        </div>
+        <div class="upSlide">
+          <h3>Complete Python Developer</h3>
+          <p>Completed April 5, 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="upSlide">
+        <h1>Reach out!</h1>
+        <p>Want to discuss a project or want to just say hi? My inbox is open to all.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
 </html>
