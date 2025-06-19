@@ -11,7 +11,7 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: #2C3D55;
+      background: #30332a;
       color: white;
       padding: 1em;
       display: flex;
@@ -28,16 +28,12 @@
       min-height: 80vh;
       color: white;
     }
-    /* #aboutme { background: #494963; }
-    #projects { background: #2f2f3f; }
-    #education { background: #494963; }
-    #contact { background: #2f2f3f; } */
   </style>
 </head>
 <body>
     <nav>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
@@ -53,6 +49,10 @@
             <img src="images/pythonlogo.png" alt="Python" class="logoSlide"/>
             <img src="images/sqllogo.png" alt="SQL" class="logoSlide"/>
             <img src="images/jslogo.png" alt="JavaScript" class="logoSlide"/>
+            <div class="buttonWrapper">
+                    <a href="#contact" class="resumeButton">CONTACT ME</a>
+                    <a href="content/resume.pdf" download class="resumeButton">DOWNLOAD MY RESUME</a>
+                </div>
         </div>
         <div class = "profileSlide">
           <img src="images/headshot.png" alt="Headshot" width="300"/>
@@ -61,16 +61,35 @@
   </section>
 
   <section id="about">
-    <div class="About Me">
+    <div class="about">
         <h1>About Me</h1>
-        <p>Blurp about myself</p>
-        <a href="content/resume.pdf" download class="resumeButton">Resume</a>
+        <div class="content">
+          <p>
+            Hey there, I'm a software developer with a background in game design, a love for creative tools, and a soft spot for long-term growth.
+            I've always been drawn to building things, especially with computers, and I've found a lot of joy (and challenge) in turning that into a career. <br><br>
+            I've lived and traveled around the world, picking up languages, perspectives, and an appreciation for how people think and work differently.
+            That global experience has shaped how I approach collaboration, learning, and problem-solving. Whether I'm diving into a new tech stack or
+            helping a team ship a project, I bring that mindset with me.
+          </p>
+          <img src="images/goobbue.gif" alt="Goobbue" width="250", class="leftSlide"/>
+        </div>
+
+        <div class="content">
+          <img src="images/mandragora.gif" alt="Mandragora" width="250", class="rightSlide"/>
+          <p>
+            I've worked on indie game projects, emulation servers, and tool development across Lua, C++, Python, and SQL. I love solving back-breaking problems
+            and improving the stuff that makes everything tick behind the scenes. <br><br>
+
+            Outside of code, I spend time working on bonsai trees. It's a slow craft, full of mistakes and opportunities for growth.
+            I like to think it reflects how I approach development.
+          </p>
+        </div>
     </div>
   </section>
 
-  <section id="skills">
+  <section id="experience">
     <div class="upSlide">
-        <h1>Skills</h1>
+        <h1>Experience</h1>
         <p>Skills go here</p>
     </div>
   </section>
@@ -78,8 +97,29 @@
   <section id="projects">
     <div class="upSlide">
         <h1>Projects</h1>
-        <p>The following are links to my past projects.</p>
     </div>
+    <div class="projectGrid">
+      <!-- Final Fantasy XI Singleplayer -->
+      <a href="https://github.com/dallano/server/tree/Singleplayer" class="projectCard" target="_blank">
+        <img src="images/ffxilogo.png" alt="FFXISP" class="projectCardThumbnail"/>
+        <p>Redesigning base LSB Final Fantasy XI emulator for a single-player experience.</p>
+        <div class="content">
+          <img src="images/lualogo.png" alt="Lua" class="logoSlide"/>
+          <img src="images/cpplogo.png" alt="Cpp" class="logoSlide"/>
+          <img src="images/sqllogo.png" alt="SQL" class="logoSlide"/>
+        </div>
+      </a>
+
+      <!-- Leetcode Solutions: -->
+      <a href="https://github.com/dallano/leetcodeSolutions" class="projectCard" target="_blank">
+        <img src="images/leetcodelogo.png" alt="Leetcode" class="projectCardThumbnail"/>
+        <p>Solutions to Leetcode problems I've successfully solved.</p>
+        <div class="content">
+          <img src="images/pythonlogo.png" alt="Python" class="logoSlide"/>
+          <img src="images/cpplogo.png" alt="Cpp" class="logoSlide"/>
+        </div>
+      </a>
+</div>
   </section>
 
   <section id="education">
@@ -93,7 +133,7 @@
         <div class="upSlide">
           <h3>University of Lethbridge</h3>
           <h4>Bachelors in Computer Sciences (September 2017 - April 2023)</h4>
-          <p>Competed in the ICPC West Division</p>
+          <p>Competed and trained for the International Collegiate Programming Contest (West Division)</p>
         </div>
     </div>
     <div class="content">
@@ -101,8 +141,9 @@
           <img src="images/udemylogo.png" alt="UDemyLogo" width="200" class="upSlide"/>
         </div>
         <div class="upSlide">
-          <h3>Complete Python Developer</h3>
-          <p>Completed April 5, 2025</p>
+          <h3>Udemy</h3>
+          <h4>Complete Python Developer (Completed April 5, 2025)</h4>
+          <p>Hands on Python course with real-world projects, covering development, automation, and data science.</p>
       </div>
     </div>
   </section>
