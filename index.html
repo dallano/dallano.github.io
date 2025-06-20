@@ -11,7 +11,7 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: #30332a;
+      background: #1e2720;
       color: white;
       padding: 1em;
       display: flex;
@@ -34,24 +34,27 @@
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
       <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
 
+
+  <!-- Splash Screen -->
   <section id="splash" class="splash">
     <div class="content">
         <div class="upSlide">
             <h1>Hi, I'm Dallan!</h1>
             <p><span id="splashTextRotate">Software Developer</span></p>
-            <img src="images/lualogo.png" alt="Lua" class="logoSlide"/>
-            <img src="images/cpplogo.png" alt="Cpp" class="logoSlide"/>
-            <img src="images/pythonlogo.png" alt="Python" class="logoSlide"/>
-            <img src="images/sqllogo.png" alt="SQL" class="logoSlide"/>
-            <img src="images/jslogo.png" alt="JavaScript" class="logoSlide"/>
+            <img src="images/lualogo.png"    alt="Lua"        class="logoSlide"/>
+            <img src="images/cpplogo.png"    alt="Cpp"        class="logoSlide"/>
+            <img src="images/pythonlogo.png" alt="Python"     class="logoSlide"/>
+            <img src="images/sqllogo.png"    alt="SQL"        class="logoSlide"/>
+            <img src="images/jslogo.png"     alt="JavaScript" class="logoSlide"/>
+            <img src="images/unreallogo.png" alt="Unreal"     class="logoSlide"/>
             <div class="buttonWrapper">
-                    <a href="#contact" class="resumeButton">CONTACT ME</a>
-                    <a href="content/resume.pdf" download class="resumeButton">DOWNLOAD MY RESUME</a>
+                    <a href="#contact" class="button">CONTACT ME</a>
+                    <a href="content/resume.pdf" download class="button">DOWNLOAD MY RESUME</a>
                 </div>
         </div>
         <div class = "profileSlide">
@@ -60,86 +63,93 @@
     </div>
   </section>
 
-  <section id="about">
+
+  <!-- About me Section -->
+  <section id="about" class="stripedSection">
     <div class="about">
-        <h1>About Me</h1>
-        <div class="content">
-          <p>
-            Hey there, I'm a software developer with a background in game design, a love for creative tools, and a soft spot for long-term growth.
-            I've always been drawn to building things, especially with computers, and I've found a lot of joy (and challenge) in turning that into a career. <br><br>
-            I've lived and traveled around the world, picking up languages, perspectives, and an appreciation for how people think and work differently.
-            That global experience has shaped how I approach collaboration, learning, and problem-solving. Whether I'm diving into a new tech stack or
-            helping a team ship a project, I bring that mindset with me.
-          </p>
-          <img src="images/goobbue.gif" alt="Goobbue" width="250", class="leftSlide"/>
-        </div>
-
-        <div class="content">
-          <img src="images/mandragora.gif" alt="Mandragora" width="250", class="rightSlide"/>
-          <p>
-            I've worked on indie game projects, emulation servers, and tool development across Lua, C++, Python, and SQL. I love solving back-breaking problems
-            and improving the stuff that makes everything tick behind the scenes. <br><br>
-
-            Outside of code, I spend time working on bonsai trees. It's a slow craft, full of mistakes and opportunities for growth.
-            I like to think it reflects how I approach development.
-          </p>
-        </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="upSlide">
-        <h1>Experience</h1>
-        <p>Skills go here</p>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="upSlide">
-        <h1>Projects</h1>
-    </div>
-    <div class="projectGrid">
-      <!-- Final Fantasy XI Singleplayer -->
-      <a href="https://github.com/dallano/server/tree/Singleplayer" class="projectCard" target="_blank">
-        <img src="images/ffxilogo.png" alt="FFXISP" class="projectCardThumbnail"/>
-        <p>Redesigning base LSB Final Fantasy XI emulator for a single-player experience.</p>
-        <div class="content">
-          <img src="images/lualogo.png" alt="Lua" class="logoSlide"/>
-          <img src="images/cpplogo.png" alt="Cpp" class="logoSlide"/>
-          <img src="images/sqllogo.png" alt="SQL" class="logoSlide"/>
-        </div>
-      </a>
-
-      <!-- Leetcode Solutions: -->
-      <a href="https://github.com/dallano/leetcodeSolutions" class="projectCard" target="_blank">
-        <img src="images/leetcodelogo.png" alt="Leetcode" class="projectCardThumbnail"/>
-        <p>Solutions to Leetcode problems I've successfully solved.</p>
-        <div class="content">
-          <img src="images/pythonlogo.png" alt="Python" class="logoSlide"/>
-          <img src="images/cpplogo.png" alt="Cpp" class="logoSlide"/>
-        </div>
-      </a>
-</div>
-  </section>
-
-  <section id="education">
-      <div class="upSlide">
-          <h1>Education and Certifications</h1>
+      <h1>About Me</h1>
+      <div class="content">
+        <p>
+          Hey there, I'm a software developer with a background in game design, a love for creative tools, and a soft spot for long-term growth.
+          I've always been drawn to building things, especially with computers, and I've found a lot of joy (and challenge) in turning that into a career. <br><br>
+          I've lived and traveled around the world, picking up languages, perspectives, and an appreciation for how people think and work differently.
+          That global experience has shaped how I approach collaboration, learning, and problem-solving. Whether I'm diving into a new tech stack or
+          helping a team ship a project, I bring that mindset with me.
+        </p>
+        <img src="images/goobbue.gif" alt="Goobbue" width="250", class="leftSlide"/>
       </div>
-    <div class="content">
-        <div>
-            <img src="images/universitylogo.png" alt="UniversityLogo" width="200" class="upSlide"/>
+
+      <div class="content">
+        <img src="images/moogle.gif" alt="Moogle" width="250", class="rightSlide"/>
+        <p>
+          I've worked on indie game projects, emulation servers, and tool development across Lua, C++, Python, and SQL. I love solving back-breaking problems
+          and improving the stuff that makes everything tick behind the scenes. <br><br>
+
+          Outside of code, I spend time working on bonsai trees. It's a slow craft, full of mistakes and opportunities for growth.
+          I like to think it reflects how I approach development.
+        </p>
+      </div>
+    </div>
+    <img src="images/border.png" alt="border" class="sectionDivider"/>
+  </section>
+
+
+  <!-- Experience Section -->
+  <section id="experience" class="experienceSection">
+    <div class="upSlide"><h1>Professional Experience</h1></div>
+    <div class="experienceGrid">
+        <!-- Final Fantasy XI Singleplayer -->
+        <div class="experienceCard">
+          <img src="images/horizonlogo.png" alt="horizonlogo" class="experienceLogo"/>
+          <h1>Horizon XI</h1>
+          <h3>Lead Developer</h3>
+          <ul>
+            <li>Led enhancements to a hybrid Lua, C++, and SQL codebase, improving modularity and team scalability.</li>
+            <li>Audited and optimized public database systems, ensuring game data accuracy and performance.</li>
+            <li>Mentored junior developers and coordinated technical collaboration across a distributed team.</li>
+          </ul>
+          <div class="content">
+            <img src="images/lualogo.png" alt="Lua" class="logoSlide"/>
+            <img src="images/cpplogo.png" alt="Cpp" class="logoSlide"/>
+            <img src="images/sqllogo.png" alt="SQL" class="logoSlide"/>
+          </div>
         </div>
+
+      <!-- Prairie Fire Game Studios -->
+      <div class="experienceCard">
+        <img src="images/pfglogo.png" alt="pfglogo" class="experienceLogo"/>
+        <h1>Prairie Fire Game Studios</h1>
+        <h3>Co-Founder</h3>
+        <ul>
+          <li>Established core development pipelines and business infrastructure for an indie game studio startup.</li>
+          <li>Directed project tooling and documentation to streamline team onboarding and feature iteration.</li>
+          <li>Built gameplay systems in Unreal Engine, collaborating with multi-disciplinary teams.</li>
+        </ul>
+        <div class="content">
+          <img src="images/cpplogo.png"    alt="Cpp"    class="logoSlide"/>
+          <img src="images/unreallogo.png" alt="Unreal" class="logoSlide"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Education Section  -->
+  <section id="education" class="normalSection">
+    <div class="upSlide"> <h1>Education and Certifications</h1></div>
+
+    <div class="content">
+        <div><img src="images/universitylogo.png" alt="UniversityLogo" width="200" class="upSlide"/></div>
+
         <div class="upSlide">
           <h3>University of Lethbridge</h3>
           <h4>Bachelors in Computer Sciences (September 2017 - April 2023)</h4>
           <p>Competed and trained for the International Collegiate Programming Contest (West Division)</p>
         </div>
     </div>
+
     <div class="content">
-        <div>
-          <img src="images/udemylogo.png" alt="UDemyLogo" width="200" class="upSlide"/>
-        </div>
+        <div><img src="images/udemylogo.png" alt="UDemyLogo" width="200" class="upSlide"/></div>
         <div class="upSlide">
           <h3>Udemy</h3>
           <h4>Complete Python Developer (Completed April 5, 2025)</h4>
@@ -148,10 +158,48 @@
     </div>
   </section>
 
-  <section id="contact">
-    <div class="upSlide">
+
+  <!-- Linked Github Projects -->
+  <section id="projects" class="normalSection">
+    <div class="projectSection">
+      <div class="upSlide">
+          <h1>Projects</h1>
+      </div>
+      <div class="projectGrid">
+        <!-- Final Fantasy XI Singleplayer -->
+        <a href="https://github.com/dallano/server/tree/Singleplayer" class="projectCard" target="_blank">
+          <img src="images/ffxilogo.png" alt="FFXISP" class="projectCardThumbnail"/>
+          <p>Redesigning base LSB Final Fantasy XI emulator for a single-player experience.</p>
+          <div class="content">
+            <img src="images/lualogo.png" alt="Lua" class="logoSlide"/>
+            <img src="images/cpplogo.png" alt="Cpp" class="logoSlide"/>
+            <img src="images/sqllogo.png" alt="SQL" class="logoSlide"/>
+          </div>
+        </a>
+
+        <!-- Leetcode Solutions: -->
+        <a href="https://github.com/dallano/leetcodeSolutions" class="projectCard" target="_blank">
+          <img src="images/leetcodelogo.png" alt="Leetcode" class="projectCardThumbnail"/>
+          <p>Solutions to Leetcode problems I've successfully solved.</p>
+          <div class="content">
+            <img src="images/pythonlogo.png" alt="Python" class="logoSlide"/>
+            <img src="images/cpplogo.png" alt="Cpp" class="logoSlide"/>
+          </div>
+        </a>
+      </div>
+    </div>
+    <img src="images/border.png" alt="border" class="sectionDivider"/>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="stripedSection">
+    <div class="rightSlide">
         <h1>Reach out!</h1>
-        <p>Want to discuss a project or want to just say hi? My inbox is open to all.</p>
+        <p>Want to discuss a project or just say hi? My inbox is open to all.</p>
+        <a href=mailto:"dallan.atwood@gmail.com"><img src="images/gmaillogo.png" alt="gmail" class="logoButton"/></a>
+        <a href="https://www.linkedin.com/in/dallan-atwood-795344289/"><img src="images/linkedinlogo.png" alt="linkedin" class="logoButton"/></a>
+        <a href="https://github.com/dallano"><img src="images/githublogo.png" alt="github" class="logoButton"/></a>
     </div>
   </section>
 

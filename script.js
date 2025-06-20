@@ -1,4 +1,4 @@
-const animatedElements = document.querySelectorAll(".upSlide, .leftSlide, .rightSlide, .imageSlide, .logoSlide, .profileSlide, .projectCard");
+const animatedElements = document.querySelectorAll(".upSlide, .leftSlide, .rightSlide, .imageSlide, .logoSlide, .profileSlide, .projectCard, .experienceCard");
 const splashTitles =
 [
     "Software Developer",
