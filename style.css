@@ -19,7 +19,7 @@ body
 {
   position: relative;
   padding: 80px 20px;
-  min-height: auto;
+  min-height: 0;
 }
 
 .stripedSection
@@ -126,7 +126,7 @@ body
   50%      { transform: translateY(10px); }
 }
 
-.content
+.content, .educationContent, .aboutMeContent
 {
     width: 100%;
     display: flex;
@@ -199,6 +199,29 @@ body
     border-radius: 100%;
     border: 5px solid #45814e;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.aboutMeContent
+{
+  margin-top: 1rem;
+  background-color: #364b3c;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 95%;
+  height: auto;
+}
+
+/* Education Section */
+.educationContent
+{
+  margin-top: 1rem;
+  background-color: #324437;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 90%;
+  height: auto;
 }
 
 /* Experience Section (Some helpers borrowed from project */
