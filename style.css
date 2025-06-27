@@ -18,6 +18,7 @@ body
 {
   position: relative;
   padding: 80px 20px;
+  min-height: auto;
 }
 
 .stripedSection
@@ -193,7 +194,7 @@ body
   color: white;
   border-radius: 12px;
   text-align: center;
-  width: 650px;
+  width: 45%;
   height: 475px;
   padding: 1rem;
   text-decoration: none;

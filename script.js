@@ -31,7 +31,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.2 // Trigger when 10% of the section is visible
+    threshold: 0.10 // Trigger when 10% of the section is visible
   }
 );
 
