@@ -136,10 +136,10 @@
     </div>
   </section>
 
-
   <!-- Education Section  -->
   <section id="education" class="normalSection">
     <div class="upSlide"> <h1>Education and Certifications</h1></div>
+    <div class="sectionStripe"></div>
 
     <div class="content">
         <div><img src="images/universitylogo.png" alt="UniversityLogo" width="200" class="upSlide"/></div>
@@ -165,14 +165,30 @@
   <!-- Linked Github Projects -->
   <section id="projects" class="normalSection">
     <div class="projectSection">
-      <div class="upSlide">
-          <h1>Projects</h1>
-      </div>
+      <div class="upSlide"> <h1>Projects and Open Source Work</h1></div>
+      <div class="sectionStripe"></div>
       <div class="projectGrid">
         <!-- Final Fantasy XI Singleplayer -->
         <a href="https://github.com/dallano/server/tree/Singleplayer" class="projectCard" target="_blank">
           <img src="images/ffxilogo.png" alt="FFXISP" class="projectCardThumbnail"/>
-          <p>Redesigning base LSB Final Fantasy XI emulator for a single-player experience.</p>
+          <ul>
+            <li>Redesigning base LSB Final Fantasy XI emulator for a single-player experience</li>
+            <li>Adding new core functionality such as custom AI pals that interact with the player</li>
+          </ul>
+          <div class="content">
+            <img src="images/lualogo.png" alt="Lua" class="logoSlide"/>
+            <img src="images/cpplogo.png" alt="Cpp" class="logoSlide"/>
+            <img src="images/sqllogo.png" alt="SQL" class="logoSlide"/>
+          </div>
+        </a>
+
+        <!-- Final Fantasy XI Horizon -->
+        <a href="https://github.com/AirSkyBoat/AirSkyBoat/pulls?q=is%3Apr+author%3Adallano+is%3Aclosed" class="projectCard" target="_blank">
+          <img src="images/horizonBanner.png" alt="FFXIHorizon" class="projectCardThumbnail"/>
+          <ul>
+            <li>Implemented critical missing systems and delivered live features to thousands of active players</li>
+            <li>Resolved bug tickets submitted by players and QA, improving system stability and player satisfaction</li>
+          </ul>
           <div class="content">
             <img src="images/lualogo.png" alt="Lua" class="logoSlide"/>
             <img src="images/cpplogo.png" alt="Cpp" class="logoSlide"/>
@@ -183,10 +199,12 @@
         <!-- Leetcode Solutions: -->
         <a href="https://github.com/dallano/leetcodeSolutions" class="projectCard" target="_blank">
           <img src="images/leetcodelogo.png" alt="Leetcode" class="projectCardThumbnail"/>
-          <p>Solutions to Leetcode problems I've successfully solved.</p>
+          <ul>
+            <li>Ongoing solutions to Leetcode problems I've successfully solved in Python</li>
+          </ul>
+          <p></p>
           <div class="content">
             <img src="images/pythonlogo.png" alt="Python" class="logoSlide"/>
-            <img src="images/cpplogo.png" alt="Cpp" class="logoSlide"/>
           </div>
         </a>
       </div>
@@ -197,12 +215,15 @@
 
   <!-- Contact Section -->
   <section id="contact" class="stripedSection">
-    <div class="rightSlide">
-        <h1>Reach out!</h1>
-        <p>Want to discuss a project or just say hi? My inbox is open to all.</p>
-        <a href=mailto:"dallan.atwood@gmail.com"><img src="images/gmaillogo.png" alt="gmail" class="logoButton"/></a>
-        <a href="https://www.linkedin.com/in/dallan-atwood-795344289/"><img src="images/linkedinlogo.png" alt="linkedin" class="logoButton"/></a>
-        <a href="https://github.com/dallano"><img src="images/githublogo.png" alt="github" class="logoButton"/></a>
+    <div class="content">
+        <div class="upSlide">
+            <h1>Reach out!</h1>
+            <p>Want to discuss a project or just say hi? My inbox is open to all.</p>
+
+            <a href=mailto:"dallan.atwood@gmail.com"><img src="images/gmaillogo.png" alt="gmail" class="logoButton"/></a>
+            <a href="https://www.linkedin.com/in/dallan-atwood-795344289/"><img src="images/linkedinlogo.png" alt="linkedin" class="logoButton"/></a>
+            <a href="https://github.com/dallano"><img src="images/githublogo.png" alt="github" class="logoButton"/></a>
+        </div>
     </div>
   </section>
 
